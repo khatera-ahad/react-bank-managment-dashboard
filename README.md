@@ -1,1 +1,0 @@
-# react-bank-managment-dashboard
