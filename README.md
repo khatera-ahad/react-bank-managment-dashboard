@@ -1,1 +1,1 @@
-**React Bank Account Management Dashboard — UI Design Prompt
+React Bank Account Management Dashboard — UI Design Prompt
