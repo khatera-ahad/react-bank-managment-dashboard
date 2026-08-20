@@ -3,5 +3,6 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/react-bank-managment-dashboard/",
-});
+  base: "/react-to-gh-pages/",
+})
+
