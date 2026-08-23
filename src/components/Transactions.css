@@ -1,0 +1,72 @@
+.transactions-panel {
+  background: var(--panel-bg);
+  border-radius: var(--radius);
+  padding: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.view-all {
+  background: none;
+  border: none;
+  color: var(--accent-blue);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions-table th {
+  text-align: left;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  padding-bottom: 12px;
+}
+
+.transactions-table td {
+  padding: 12px 0;
+  border-top: 1px solid #f0f4f8;
+}
+
+.desc-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.sub {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.category-pill {
+  background: #eef2f6;
+  font-size: 0.7rem;
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: var(--text-secondary);
+}
+
+.amount-cell {
+  font-weight: 600;
+  text-align: right;
+}
+
+.amount-cell.negative { color: #121926; }
+.amount-cell.positive { color: #00875a; }
