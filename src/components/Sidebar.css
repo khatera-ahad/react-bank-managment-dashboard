@@ -1,0 +1,36 @@
+/* components/Sidebar.css */
+.sidebar {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    padding: 8px 16px;
+    cursor: pointer;
+    color: #666;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.nav-links li:hover {
+    background: #e3f2fd;
+    color: #1a237e;
+}
+
+.nav-links .active {
+    background: #1a237e;
+    color: white;
+}

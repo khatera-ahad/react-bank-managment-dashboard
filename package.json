@@ -1,5 +1,5 @@
 {
-  "name":  "react-bank-managment-dashboard",
+  "name": "react-bank-managment-dashboard",
   "private": true,
   "version": "0.0.0",
   "homepage": "https://khatera-ahad.github.io/react-bank-managment-dashboard/",
@@ -10,7 +10,6 @@
     "deploy": "npm run build && gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
-  
   },
   "dependencies": {
     "react": "^19.2.8",
