@@ -1,20 +1,14 @@
-// App.jsx
-import { useState } from 'react';
+import React, { useState } from 'react';
+import Sidebar from './components/Sidebar';
+import Header from './components/Header';
+
 import './App.css';
-import Navbar from './components/Navbar';
 
-function App() {
-  // Define the brand object with the required properties
-  const brand = {
-    name: "Sara",
-    icon: "🏦" // or use an image URL
-  };
-
+export default function App() { 
   return (
-    <>
-      <Navbar brand={brand} />
-    </>
+    <div className="dashboard-layout">
+      <Sidebar />
+     
+    </div>
   );
 }
-
-export default App;
