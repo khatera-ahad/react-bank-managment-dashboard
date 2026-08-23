@@ -11,7 +11,10 @@ export default function App() {
       <Sidebar />
       <div className="dashboard-main">
         <Header user={account.accountName} />
+        <div className="main-content-column">
+            <BalanceOverview balance={account.balance} onAddFunds={handleCredit} />
       </div>
+    </div>
     </div>
   );
 }

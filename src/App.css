@@ -1,0 +1,42 @@
+:root {
+  --bg-color: #f4f6fb;
+  --panel-bg: #ffffff;
+  --text-primary: #121926;
+  --text-secondary: #697586;
+  --accent-blue: #0f52ba;
+  --border-color: #e3e8ef;
+  --radius: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+}
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.dashboard-main {
+  flex-grow: 1;
+  padding: 24px 32px;
+  max-width: 1400px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.main-content-column,
+.side-content-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
