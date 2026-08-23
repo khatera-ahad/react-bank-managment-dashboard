@@ -1,0 +1,58 @@
+.my-card-panel {
+  background: var(--panel-bg);
+  padding: 20px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+}
+
+.credit-card {
+  background: linear-gradient(135deg, #0f2b48, #0052cc);
+  color: white;
+  border-radius: 14px;
+  padding: 20px;
+  margin: 12px 0;
+}
+
+.card-top-row {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.card-number {
+  margin: 24px 0;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-bottom label {
+  font-size: 0.6rem;
+  opacity: 0.7;
+}
+
+.card-bottom p {
+  margin: 2px 0 0 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.card-quick-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.card-quick-actions button {
+  flex: 1;
+  background: #f8fafc;
+  border: 1px solid var(--border-color);
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
