@@ -1,0 +1,69 @@
+.quick-transfer-panel {
+  background: var(--panel-bg);
+  padding: 20px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+}
+
+.avatar-list {
+  display: flex;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.add-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px dashed var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.user-target {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.user-target img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-target.selected img {
+  border: 2px solid var(--accent-blue);
+}
+
+.transfer-input {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.transfer-input input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.send-btn {
+  width: 100%;
+  background: #0d253f;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
