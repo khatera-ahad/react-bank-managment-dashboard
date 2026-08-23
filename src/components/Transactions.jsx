@@ -1,24 +1,41 @@
-// components/Sidebar.jsx
-import './Sidebar.css';
+import React from 'react';
+import './Transactions.css';
 
-export default function Sidebar({ navItems, activeItem }) {
-    const handleNavClick = (item) => {
-        alert(`${item} clicked`);
-    };
-
-    return (
-        <div className="sidebar">
-            <ul className="nav-links">
-                {navItems.map((item) => (
-                    <li 
-                        key={item}
-                        className={activeItem === item ? 'active' : ''}
-                        onClick={() => handleNavClick(item)}
-                    >
-                        {item}
-                    </li>
-                ))}
-            </ul>
-        </div>
-    );
+export default function Transactions({ transactions }) {
+  return (
+    <div className="transactions-panel">
+      <div className="panel-header">
+        <h3>Recent Transactions</h3>
+        <button className="view-all">View All</button>
+      </div>
+      <table className="transactions-table">
+        <thead>
+          <tr>
+            <th>DESCRIPTION</th>
+            <th>DATE</th>
+            <th>CATEGORY</th>
+            <th>AMOUNT</th>
+          </tr>
+        </thead>
+        <tbody>
+          {transactions.map(item => (
+            <tr key={item.id}>
+              <td className="desc-cell">
+                <div className="trans-icon">🛒</div>
+                <div>
+                  <p className="title">{item.name}</p>
+                  <p className="sub">{item.sub}</p>
+                </div>
+              </td>
+              <td className="date-cell">{item.date}</td>
+              <td><span className="category-pill">{item.category}</span></td>
+              <td className={`amount-cell ${item.amount < 0 ? 'negative' : 'positive'}`}>
+                {item.amount < 0 ? `-$${Math.abs(item.amount).toFixed(2)}` : `+$${item.amount.toFixed(2)}`}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
 }
