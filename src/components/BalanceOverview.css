@@ -1,0 +1,61 @@
+.balance-card {
+  background: var(--panel-bg);
+  border-radius: var(--radius);
+  padding: 24px;
+  border: 1px solid var(--border-color);
+}
+
+.balance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.balance-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.balance-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.balance-row h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.badge-growth {
+  background-color: #e6f4ff;
+  color: #0066ff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+
+.add-funds-btn {
+  background-color: #0d253f;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.chart-container {
+  margin-top: 20px;
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.smooth-chart {
+  width: 100%;
+  height: 120px;
+}
