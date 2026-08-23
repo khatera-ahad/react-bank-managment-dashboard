@@ -1,0 +1,30 @@
+.usage-limits-panel {
+  background: var(--panel-bg);
+  padding: 20px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+}
+
+.limit-item {
+  margin-top: 16px;
+}
+
+.limit-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #eef2f6;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #0052cc;
+}
