@@ -1,0 +1,39 @@
+.account-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.mini-account-card {
+  background: var(--panel-bg);
+  padding: 18px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.status-badge {
+  background: #e6f4ff;
+  color: #0066ff;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.mini-account-card h3 {
+  margin: 0 0 4px 0;
+  font-size: 1.2rem;
+}
+
+.mini-account-card p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
