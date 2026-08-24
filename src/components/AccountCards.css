@@ -1,39 +1,86 @@
-.account-cards-grid {
+.account-cards-panel {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #e3e8ef;
+  margin-bottom: 24px;
+}
+
+.account-cards-panel h3 {
+  margin: 0 0 16px 0;
+  color: #121926;
+  font-size: 1.1rem;
+}
+
+.account-cards-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 16px;
 }
 
-.mini-account-card {
-  background: var(--panel-bg);
-  padding: 18px;
-  border-radius: var(--radius);
-  border: 1px solid var(--border-color);
+.account-card-item {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.card-top {
+.account-card-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
+  align-items: flex-start;
 }
 
-.status-badge {
-  background: #e6f4ff;
-  color: #0066ff;
+.account-type-badge {
   font-size: 0.7rem;
-  padding: 2px 8px;
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.account-holder-name {
+  margin: 8px 0 0 0;
+  font-size: 1.1rem;
+}
+
+.account-card-body {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-label {
+  display: block;
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.info-value {
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
-.mini-account-card h3 {
-  margin: 0 0 4px 0;
-  font-size: 1.2rem;
+.account-card-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.mini-account-card p {
-  margin: 0;
-  font-size: 0.8rem;
-  color: var(--text-secondary);
+.balance-caption {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.account-balance-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #38bdf8;
 }

@@ -1,19 +1,23 @@
 import React from 'react';
 import './Header.css';
 
-export default function Header({ user }) {
+export default function Header({ user, onLogout }) {
   return (
-    <header className="header">
-      <div className="search-bar">
-        <i>🔍</i>
+    <header className="dashboard-header">
+      <div className="header-search">
         <input type="text" placeholder="Search transactions, accounts..." />
       </div>
+      
       <div className="header-actions">
-        <button className="icon-btn">🔔</button>
-        <button className="icon-btn">⚙️</button>
-        <div className="user-avatar">
-          <img src="https://i.pravatar.cc/40?img=12" alt={user} />
+        <div className="user-profile">
+          <span className="user-avatar">👤</span>
+          <span className="user-name">{user}</span>
         </div>
+        
+       
+        <button className="logout-btn" onClick={onLogout} title="Log out">
+          🚪 Logout
+        </button>
       </div>
     </header>
   );

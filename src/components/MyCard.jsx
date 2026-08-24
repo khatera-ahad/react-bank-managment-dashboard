@@ -11,7 +11,7 @@ export default function MyCard({ accountName }) {
       <div className="credit-card">
         <div className="card-top-row">
           <span className="brand">VISA</span>
-          <span className="contactless">📶</span>
+          <span className="contactless"></span>
         </div>
         <div className="card-number">•••• •••• •••• 9012</div>
         <div className="card-bottom">
@@ -26,9 +26,9 @@ export default function MyCard({ accountName }) {
         </div>
       </div>
       <div className="card-quick-actions">
-        <button>❄️ Freeze</button>
-        <button>🔗 Details</button>
-        <button>⚙️ Settings</button>
+        <button> Freeze</button>
+        <button>Details</button>
+        <button>Settings</button>
       </div>
     </div>
   );

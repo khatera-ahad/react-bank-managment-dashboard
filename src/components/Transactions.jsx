@@ -49,7 +49,7 @@ export default function Transactions({ transactions = [], currentAccount }) {
               <tr key={item.id}>
                 <td className="desc-cell">
                   <div className={`trans-icon ${item.type}`}>
-                    {item.type === 'credit' ? '📥' : '📤'}
+                    {item.type === 'credit' ? '' : ''}
                   </div>
                   <div className="account-details">
                     <p className="title">{item.action}</p>

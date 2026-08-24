@@ -1,25 +1,32 @@
 import React from 'react';
 import './Sidebar.css';
 
-export default function Sidebar() {
+export default function Sidebar({ activeTab, setActiveTab }) {
+  const navItems = [
+    { id: 'dashboard', label: 'Dashboard'},
+    { id: 'transactions', label: 'Transactions'},
+    { id: 'accounts', label: 'Accounts'},
+    { id: 'settings', label: 'Settings'}
+  ];
+
   return (
-    <aside className="sidebar">
-      <div className="sidebar-brand">
-        <h2>Bank Manager</h2>
-        <span className="sub-brand">Private Wealth</span>
+    <aside className="sidebar-container">
+      <div className="sidebar-logo">
+        <h2>BankDash</h2>
       </div>
+
       <ul className="sidebar-menu">
-        <li className="active"><i></i> Dashboard</li>
-        <li><i></i> Accounts</li>
-        <li><i></i> Transactions</li>
-        <li><i></i> Payments</li>
-        <li><i></i> Cards</li>
-        <li><i></i> Analytics</li>
+        {navItems.map((item) => (
+          <li
+            key={item.id}
+            className={`menu-item ${activeTab === item.id ? 'active' : ''}`}
+            onClick={() => setActiveTab(item.id)}
+          >
+            <span className="menu-icon">{item.icon}</span>
+            <span className="menu-label">{item.label}</span>
+          </li>
+        ))}
       </ul>
-      <div className="sidebar-footer">
-        <button className="support-btn">Support</button>
-        <button className="logout-btn"><i>🚪</i> Log out</button>
-      </div>
     </aside>
   );
 }
