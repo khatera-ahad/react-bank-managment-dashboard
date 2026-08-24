@@ -11,9 +11,9 @@ export default function Transactions({ transactions }) {
       <table className="transactions-table">
         <thead>
           <tr>
-            <th>DESCRIPTION</th>
-            <th>DATE</th>
-            <th>CATEGORY</th>
+            <th>ACTION</th>
+            <th>DATE & TIME</th>
+            <th>BALANCE AFTER</th>
             <th>AMOUNT</th>
           </tr>
         </thead>
@@ -21,14 +21,13 @@ export default function Transactions({ transactions }) {
           {transactions.map(item => (
             <tr key={item.id}>
               <td className="desc-cell">
-                <div className="trans-icon">🛒</div>
+                <div className="trans-icon">💳</div>
                 <div>
-                  <p className="title">{item.name}</p>
-                  <p className="sub">{item.sub}</p>
+                  <p className="title">{item.action}</p>
                 </div>
               </td>
-              <td className="date-cell">{item.date}</td>
-              <td><span className="category-pill">{item.category}</span></td>
+              <td className="date-cell">{item.time}</td>
+              <td><span className="category-pill">${item.balance.toFixed(2)}</span></td>
               <td className={`amount-cell ${item.amount < 0 ? 'negative' : 'positive'}`}>
                 {item.amount < 0 ? `-$${Math.abs(item.amount).toFixed(2)}` : `+$${item.amount.toFixed(2)}`}
               </td>

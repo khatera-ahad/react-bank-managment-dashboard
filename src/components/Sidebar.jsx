@@ -1,20 +1,25 @@
 import React from 'react';
-import './Header.css';
+import './Sidebar.css';
 
-export default function Header({ user }) {
+export default function Sidebar() {
   return (
-    <header className="header">
-      <div className="search-bar">
-        <i>🔍</i>
-        <input type="text" placeholder="Search transactions, accounts..." />
+    <aside className="sidebar">
+      <div className="sidebar-brand">
+        <h2>Bank Manager</h2>
+        <span className="sub-brand">Private Wealth</span>
       </div>
-      <div className="header-actions">
-        <button className="icon-btn">🔔</button>
-        <button className="icon-btn">⚙️</button>
-        <div className="user-avatar">
-          <img src="https://i.pravatar.cc/40?img=12" alt={user} />
-        </div>
+      <ul className="sidebar-menu">
+        <li className="active"><i></i> Dashboard</li>
+        <li><i></i> Accounts</li>
+        <li><i></i> Transactions</li>
+        <li><i></i> Payments</li>
+        <li><i></i> Cards</li>
+        <li><i></i> Analytics</li>
+      </ul>
+      <div className="sidebar-footer">
+        <button className="support-btn">Support</button>
+        <button className="logout-btn"><i>🚪</i> Log out</button>
       </div>
-    </header>
+    </aside>
   );
 }

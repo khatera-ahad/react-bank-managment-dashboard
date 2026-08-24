@@ -9,8 +9,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <HelmetProvider>
       <App />
-      <Sidebar />
-      <Header  />
+
     </HelmetProvider>
   </React.StrictMode>
 );

@@ -3,9 +3,9 @@ import './AccountCards.css';
 
 export default function AccountCards() {
   const accounts = [
-    { type: 'Checking', number: '1234', amount: '$45,210.50', status: 'Active', icon: '🏦' },
-    { type: 'Savings', number: '5678', amount: '$72,000.00', status: 'Active', icon: '🐷' },
-    { type: 'Credit', number: '9012', amount: '$7,381.50', status: 'Active', icon: '💳' },
+    { type: 'Checking', number: '1234', amount: '$45,210.50', status: 'Active' },
+    { type: 'Savings', number: '5678', amount: '$72,000.00', status: 'Active' },
+    { type: 'Credit', number: '9012', amount: '$7,381.50', status: 'Active' },
   ];
 
   return (
