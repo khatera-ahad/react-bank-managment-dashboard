@@ -1,30 +1,144 @@
-.usage-limits-panel {
-  background: var(--panel-bg);
-  padding: 20px;
-  border-radius: var(--radius);
-  border: 1px solid var(--border-color);
+.transactions-panel {
+  background: var(--panel-bg, #ffffff);
+  border-radius: var(--radius, 16px);
+  padding: 24px;
+  border: 1px solid var(--border-color, #e3e8ef);
 }
 
-.limit-item {
-  margin-top: 16px;
-}
-
-.limit-info {
+.panel-header {
   display: flex;
   justify-content: space-between;
-  font-size: 0.75rem;
-  color: var(--text-secondary);
-  margin-bottom: 6px;
+  align-items: flex-start;
+  margin-bottom: 20px;
 }
 
-.progress-bar {
-  height: 6px;
-  background: #eef2f6;
+.panel-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #121926;
+}
+
+.account-meta-subtitle {
+  margin: 4px 0 0 0;
+  font-size: 0.8rem;
+  color: #697586;
+}
+
+.view-all {
+  background: none;
+  border: none;
+  color: #0f52ba;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions-table th {
+  text-align: left;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #697586;
+  letter-spacing: 0.5px;
+  padding-bottom: 14px;
+}
+
+.transactions-table td {
+  padding: 14px 0;
+  border-top: 1px solid #f0f4f8;
+  vertical-align: top;
+}
+
+.desc-cell {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.trans-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.trans-icon.credit {
+  background-color: #e6f4ff;
+}
+
+.trans-icon.debit {
+  background-color: #fef2f2;
+}
+
+.account-details .title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: #121926;
+}
+
+.account-details .sub-detail {
+  margin: 3px 0 0 0;
+  font-size: 0.78rem;
+  color: #364152;
+}
+
+.account-details .sub-detail-small {
+  margin: 2px 0 0 0;
+  font-size: 0.72rem;
+  color: #697586;
+}
+
+.date-cell {
+  font-size: 0.8rem;
+  color: #121926;
+}
+
+.balance-after {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.72rem;
+  color: #697586;
+  background: #f8fafc;
+  padding: 2px 6px;
   border-radius: 4px;
-  overflow: hidden;
 }
 
-.progress-fill {
-  height: 100%;
-  background: #0052cc;
+.branch-cell .branch-name {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #364152;
+}
+
+.branch-cell .iban-code {
+  margin: 2px 0 0 0;
+  font-size: 0.72rem;
+  color: #697586;
+  font-family: monospace;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.amount-cell {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.amount-cell.debit {
+  color: #121926;
+}
+
+.amount-cell.credit {
+  color: #00875a;
 }
