@@ -1,9 +1,8 @@
-```markdown
 # 🏦 React Bank Management Dashboard
 
 A Bank Management Dashboard built with **React** and **Vite**. This application features real-time balance tracking, interactive SVG balance trend analytics, seamless multi-user fund transfers, account overview cards, and strict credit/debit usage limit checks.
 
-
+---
 
 ## 🚀 Live Demo
 
@@ -32,7 +31,7 @@ A Bank Management Dashboard built with **React** and **Vite**. This application 
 * **SVG** (Custom interactive linear trend charts)
 * **Git & GitHub Pages** (Version control and gh-pages automated deployment)
 
-
+---
 
 ## 🔄 Account Operations & Logic
 
@@ -106,8 +105,6 @@ react-bank-managment-dashboard/
 ├── package.json
 ├── vite.config.js
 └── README.md
-
-```
 
 
 ### Local Setup
